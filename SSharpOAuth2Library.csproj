@@ -1,0 +1,161 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0825B3D2-C8DD-41B2-9596-52EC17AF8C73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSharpOAuth2Library</RootNamespace>
+    <AssemblyName>SSharpOAuth2Library</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETCF;SSHARP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <DefineConstants>NETCF;SSHARP</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5583.25238, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\ProgramData\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SSCoreXmlLinqLibrary, Version=1.0.0.29766, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSCoreXmlLinqLibrary\SSCoreXmlLinqLibrary\bin\Release\SSCoreXmlLinqLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSCoreXmlLinqXpathLibrary, Version=1.0.0.16393, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSCoreXmlLinqLibrary\SSCoreXmlLinqXpathLibrary\bin\Release\SSCoreXmlLinqXpathLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSCoreXmlReaderWriterLibrary, Version=1.0.0.28429, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSCoreXmlReaderWriterLibrary\SSCoreXmlReaderWriterLibrary\bin\Release\SSCoreXmlReaderWriterLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpCrestronExtensionsLibrary, Version=1.0.0.24863, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpCrestronExtensionsLibrary\SSharpCrestronExtensionsLibrary\bin\Release\SSharpCrestronExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpDateTimeLibrary, Version=1.0.0.15333, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpDateTimeLibrary\SSharpDateTimeLibrary\bin\Release\SSharpDateTimeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpNewtonsoftJsonLibrary, Version=8.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpNewtonsoftJsonLibrary\SSharpNewtonsoftJsonLibrary\bin\Release\SSharpNewtonsoftJsonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpReflectionExtensionsLibrary, Version=1.0.0.15249, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpReflectionExtensionsLibrary\SSharpReflectionExtensionsLibrary\bin\Release\SSharpReflectionExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpRestSharpLibrary, Version=1.0.0.24677, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpRestSharpLibrary\SSharpRestSharpLibrary\bin\Release\SSharpRestSharpLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoComponentModelLibrary, Version=1.0.0.15365, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoComponentModelLibrary\SSMonoComponentModelLibrary\bin\Release\SSMonoComponentModelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoCryptographyLibrary, Version=1.0.0.15280, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoCryptographyLibrary\SSMonoCryptographyLibrary\bin\Release\SSMonoCryptographyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoWebLibrary, Version=1.0.0.5860, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoWebLibrary\SSMonoWebLibrary\bin\Release\SSMonoWebLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\BeforeAfterRequestArgs.cs" />
+    <Compile Include="Client\Endpoint.cs" />
+    <Compile Include="Client\IClient.cs" />
+    <Compile Include="Client\Impl\AsanaClient.cs" />
+    <Compile Include="Client\Impl\DigitalOceanClient.cs" />
+    <Compile Include="Client\Impl\ExactOnlineClient.cs" />
+    <Compile Include="Client\Impl\FacebookClient.cs" />
+    <Compile Include="Client\Impl\FitbitClient.cs" />
+    <Compile Include="Client\Impl\FoursquareClient.cs" />
+    <Compile Include="Client\Impl\GitHubClient.cs" />
+    <Compile Include="Client\Impl\GoogleClient.cs" />
+    <Compile Include="Client\Impl\InstagramClient.cs" />
+    <Compile Include="Client\Impl\LinkedinClient.cs" />
+    <Compile Include="Client\Impl\MailRuClient.cs" />
+    <Compile Include="Client\Impl\OdnoklassnikiClient.cs" />
+    <Compile Include="Client\Impl\SalesforceClient.cs" />
+    <Compile Include="Client\Impl\SpotifyClient.cs" />
+    <Compile Include="Client\Impl\TodoistClient.cs" />
+    <Compile Include="Client\Impl\TwitterClient.cs" />
+    <Compile Include="Client\Impl\UberClient.cs" />
+    <Compile Include="Client\Impl\VkClient.cs" />
+    <Compile Include="Client\Impl\VSTSClient.cs" />
+    <Compile Include="Client\Impl\WindowsLiveClient.cs" />
+    <Compile Include="Client\Impl\XingClient.cs" />
+    <Compile Include="Client\Impl\YahooClient.cs" />
+    <Compile Include="Client\Impl\YandexClient.cs" />
+    <Compile Include="Client\OAuth2Client.cs" />
+    <Compile Include="Client\OAuthClient.cs" />
+    <Compile Include="Client\UnexpectedResponseException.cs" />
+    <Compile Include="Configuration\ClientConfiguration.cs" />
+    <Compile Include="Configuration\IClientConfiguration.cs" />
+    <Compile Include="Configuration\IOAuth2Configuration.cs" />
+    <Compile Include="Infrastructure\EnumerableExtensions.cs" />
+    <Compile Include="Infrastructure\IRequestFactory.cs" />
+    <Compile Include="Infrastructure\NameValueCollectionExtensions.cs" />
+    <Compile Include="Infrastructure\ObjectExtensions.cs" />
+    <Compile Include="Infrastructure\RequestFactory.cs" />
+    <Compile Include="Infrastructure\RequestFactoryExtensions.cs" />
+    <Compile Include="Infrastructure\RestClientExtensions.cs" />
+    <Compile Include="Infrastructure\SafeExtensions.cs" />
+    <Compile Include="Infrastructure\StringExtensions.cs" />
+    <Compile Include="Models\UserInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rem  S# preparation will execute after these operations</PostBuildEvent>
+  </PropertyGroup>
+</Project>
