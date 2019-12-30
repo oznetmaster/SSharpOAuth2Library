@@ -3,6 +3,8 @@
 // 
 // OAuthClient.cs
 // 
+// Copyright (c) 2012-2013 Constantin Titarenko, Andrew Semack and others
+// 
 // Copyright © 2019 Nivloc Enterprises Ltd.  All rights reserved.
 // 
 // -----------------------------------------------------------------------------------------------------------------
